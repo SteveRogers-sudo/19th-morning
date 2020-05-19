@@ -1,0 +1,23 @@
+
+<form>
+<div class="container">
+  <div>
+    <p>&nbsp;
+      <th>
+        <tr>
+    <label for="uname"><b>Username</b></label>
+     <input type="text" name="username" [(ngModel)]="username" placeholder="UserName">
+        </tr>
+        </th>
+   
+     <br>
+    <label for="uname"><b>Password</b></label>
+  <input type="password" name="password" [(ngModel)]="password"  placeholder="Password">
+ </p>
+</div>
+
+    <button (click)=checkLogin() class="btn btn-success">
+      Login
+    </button>
+  </div>
+  </form>

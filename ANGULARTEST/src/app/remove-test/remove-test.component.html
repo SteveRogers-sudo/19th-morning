@@ -1,0 +1,20 @@
+<head>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+ <thead>
+  <h3 class="text-center"><u>Remove Test</u></h3>
+  <tr>
+     <br>
+    <th>TestName</th>
+    
+    <th>TestId</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor "let user of user">
+    <td>{{user.TestName}}</td>
+    <td>{{user.CentreName}</td>
+    <td>{{user.TestId}}</td>
+    <td>  <button class="btn btn-danger" (click)="deleteTest(user)"> Delete </button></td>
+  </tr>
+</tbody>

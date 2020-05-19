@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-2">
+    <table class="table table-striped">
+      <tr>
+        <th>TestName</th>
+        <th>CentreName</th>
+        <th>TestId</th>
+        <th>CentreId</th>
+        </tr>
+    <tbody>
+        <tr *ngFor="let diagnosticCentre of diagnosticCentres">
+          <td>{{diagnosticCentre.testName}}</td>
+          <td>{{diagnosticCentre.centreName}}</td>
+          <td>{{diagnosticCentre.testId}}</td>
+          <td>{{diagnosticCentre.centreId}} </td>
+          <td><button class="btn btn-danger" (click)="deleteTest(diagnosticCentre)"> Delete</button></td>
+        </tr> 
+    </tbody>
+      </table>
+  </div>
